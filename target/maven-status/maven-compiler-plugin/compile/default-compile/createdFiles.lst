@@ -1,0 +1,7 @@
+org\ame\movie\repository\ReviewRepository.class
+org\ame\movie\model\Critic.class
+org\ame\movie\model\Review.class
+org\ame\movie\resource\MovieResource.class
+org\ame\movie\repository\MovieRepository.class
+org\ame\movie\repository\CriticRepository.class
+org\ame\movie\model\Movie.class
