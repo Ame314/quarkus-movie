@@ -4,4 +4,6 @@ C:\Users\Luminar 25\Documents\quarkus-movie\src\main\java\org\ame\movie\model\Re
 C:\Users\Luminar 25\Documents\quarkus-movie\src\main\java\org\ame\movie\repository\CriticRepository.java
 C:\Users\Luminar 25\Documents\quarkus-movie\src\main\java\org\ame\movie\repository\MovieRepository.java
 C:\Users\Luminar 25\Documents\quarkus-movie\src\main\java\org\ame\movie\repository\ReviewRepository.java
+C:\Users\Luminar 25\Documents\quarkus-movie\src\main\java\org\ame\movie\resource\CriticResource.java
 C:\Users\Luminar 25\Documents\quarkus-movie\src\main\java\org\ame\movie\resource\MovieResource.java
+C:\Users\Luminar 25\Documents\quarkus-movie\src\main\java\org\ame\movie\resource\ReviewResource.java
