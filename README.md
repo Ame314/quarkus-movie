@@ -40,7 +40,7 @@ This project is a Quarkus application that provides a RESTful API for managing m
    Use Maven to build the application:
 
    ```bash
-   ./mvnw clean package
+   mvn clean package
    ```
 
 4. **Run the application locally:**
@@ -48,7 +48,7 @@ This project is a Quarkus application that provides a RESTful API for managing m
    You can run the application in development mode using:
 
    ```bash
-   ./mvnw quarkus:dev
+   mvn quarkus:dev
    ```
 
 ## Dockerization
@@ -108,6 +108,26 @@ To run the tests, use the following command:
 ./mvnw test
 ```
 
-## License
 
+
+docker exec -it postgres_container psql -U postgres -d testdb
+
+INSERT INTO critic (id, name) VALUES
+  (1, 'Ana Martínez'),
+  (2, 'Luis Gómez'),
+  (3, 'Sofía Ramírez');
+ INSERT INTO movie (id, genre, title) VALUES
+  (1, 'Drama, Biografía, Suspenso', 'The Imitation Game'),
+  (2, 'Fantasía, Aventura', 'Miss Peregrine''s Home for Peculiar Children'),
+  (3, 'Fantasía, Aventura', 'Alice in Wonderland');
+INSERT INTO review (id, rating, critic_id, movie_id, comment) VALUES
+  (1, 9, 1, 1, 'Una historia fascinante sobre Alan Turing y la Segunda Guerra Mundial.'),
+  (2, 8, 2, 2, 'Visualmente impresionante y con personajes entrañables.'),
+  (3, 7, 3, 3, 'Una versión creativa y colorida del clásico de Lewis Carroll.');
+
+mvn clean package -DskipTests -Dquarkus.package.type=uber-jar
+docker-compose build
+docker-compose up
+
+## License
 This project is licensed under the MIT License. See the LICENSE file for more details.
